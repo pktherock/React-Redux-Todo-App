@@ -7,7 +7,6 @@ import { useState } from "react";
 
 function App() {
   const [todo, setTodo] = useState({});
-  console.log("Todo", todo);
 
   return (
     <Provider store={store}>

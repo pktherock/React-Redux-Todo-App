@@ -27,7 +27,6 @@ const todoSlice = createSlice({
     },
 
     updateTodo: (state, action) => {
-      console.log(action.payload);
       state.todos = state.todos.map((prevTodo) =>
         prevTodo.id === action.payload.id
           ? { ...prevTodo, text: action.payload.text }
